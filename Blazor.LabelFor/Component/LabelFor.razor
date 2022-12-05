@@ -1,0 +1,11 @@
+﻿@if (ChildContent is null)
+{
+    <label @attributes="HtmlAttributes">@DisplayName</label>
+}
+else
+{
+    <label @attributes="HtmlAttributes">
+        @DisplayName
+        @ChildContent
+    </label>
+}
